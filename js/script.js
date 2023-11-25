@@ -104,3 +104,9 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
 });
+function convertirGrados() {
+    var gradosCelsius = document.getElementById('tela').value;
+    var gradosFahrenheit = (gradosCelsius * 9/5) + 32;
+    document.getElementById('tela').value = gradosFahrenheit.toFixed(1) + " °F";
+}
+
